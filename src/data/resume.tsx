@@ -234,6 +234,36 @@ export const DATA = {
       image: "/images/projects/telegram.png",
       video: "",
     },
+    {
+      title: "AGUIFA — Sustainable Finance for Africa",
+      href: "https://www.aguifa-finance.com/",
+      dates: "2025",
+      active: true,
+      description:
+        "Site institutionnel multilingue pour AGUIFA : ESG framework, structuration de la finance verte et reporting climat à l'échelle africaine.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
+      links: [],
+      image: "/images/projects/aguifa.png",
+      video: "",
+    },
+    {
+      title: "Forum GENI Entreprise — Site officiel",
+      href: "https://forumgenientreprise.com/",
+      dates: "2024 - 2025",
+      active: true,
+      description:
+        "Site officiel du Forum GENI Entreprise (INSEA × INPT × ENSIAS) : événements, carrières, galerie et partenaires. Conçu et maintenu en tant que Chef de cellule Communication & IT.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://forumgenientreprise.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/projects/forum.png",
+      video: "",
+    },
     // {
     //   title: "Portfolio personnel",
     //   href: "https://salimdiallo.dev",

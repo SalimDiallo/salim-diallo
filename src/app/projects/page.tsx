@@ -7,15 +7,15 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projets",
-  description: `Tous les projets software, data et IA réalisés par ${DATA.name}.`,
+  description: `Projets software, data et IA réalisés par ${DATA.name}.`,
   openGraph: {
     title: "Projets",
-    description: `Tous les projets software, data et IA réalisés par ${DATA.name}.`,
+    description: `Projets software, data et IA réalisés par ${DATA.name}.`,
   },
   twitter: {
     card: "summary_large_image",
     title: "Projets",
-    description: `Tous les projets software, data et IA réalisés par ${DATA.name}.`,
+    description: `Projets software, data et IA réalisés par ${DATA.name}.`,
   },
 };
 
@@ -37,8 +37,8 @@ export default function ProjectsPage() {
 
       <BlurFade delay={BLUR_FADE_DELAY * 2}>
         <ProjectsSection
-          title="Tous mes projets"
-          description="L'intégralité de mes projets en software engineering, data et IA — du prototype au produit livré."
+          title="Projets"
+          description="Projets en software engineering, data et IA — du prototype au produit livré."
         />
       </BlurFade>
     </section>
