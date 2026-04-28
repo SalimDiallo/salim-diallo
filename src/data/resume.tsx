@@ -152,26 +152,26 @@ export const DATA = {
   projects: [
     {
       title: "LouraTech — Gestion d'agence",
-      href: "#",
+      href: "https://www.louratech.org/",
       dates: "2024 - 2025",
       active: true,
       description:
         "App web de gestion d'agence : clients, employés, projets, facturation, dashboards.",
       technologies: ["Django", "PostgreSQL", "Tailwind CSS", "HTMX"],
       links: [],
-      image: "",
+      image: "/images/projects/louratech.png",
       video: "",
     },
     {
       title: "Agence de voyage — Sénégal",
-      href: "#",
+      href: "https://www.senegalpremiumtour.com/",
       dates: "2024",
       active: true,
       description:
         "Site d'agence de voyage : catalogue de tours au Sénégal, réservation et paiement en ligne.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
       links: [],
-      image: "",
+      image: "/images/projects/senetour.png",
       video: "",
     },
     {
@@ -183,7 +183,7 @@ export const DATA = {
         "LLM + RAG : flashcards et quiz adaptatifs générés depuis tes cours et PDFs. Révisions espacées.",
       technologies: ["Python", "RAG", "LangChain", "Next.js"],
       links: [],
-      image: "",
+      image: "/images/projects/revise.png",
       video: "",
     },
     {
@@ -195,7 +195,7 @@ export const DATA = {
         "Scraping multi-sources de données auto, nettoyage, déduplication et stockage SQL pour analyse.",
       technologies: ["Python", "BeautifulSoup", "Playwright", "PostgreSQL"],
       links: [],
-      image: "",
+      image: "/images/projects/carforSale.png",
       video: "",
     },
     {
@@ -207,7 +207,7 @@ export const DATA = {
         "Workflow N8N : Gmail → extraction LLM → base Notion structurée.",
       technologies: ["N8N", "Notion API", "Gmail API", "OpenAI"],
       links: [],
-      image: "",
+      image: "/images/projects/n8n.png",
       video: "",
     },
     {
@@ -219,7 +219,7 @@ export const DATA = {
         "Suivi temps réel des cours crypto, alertes personnalisées, historique. Event-driven + WebSockets.",
       technologies: ["Next.js", "TypeScript", "WebSockets", "Redis"],
       links: [],
-      image: "",
+      image: "/images/projects/CryptoApp.png",
       video: "",
     },
     {
@@ -231,27 +231,27 @@ export const DATA = {
         "Bot Telegram : campagnes en masse, templating, planification, reporting de livraison.",
       technologies: ["Python", "Telegram Bot API", "PostgreSQL"],
       links: [],
-      image: "",
+      image: "/images/projects/telegram.png",
       video: "",
     },
-    {
-      title: "Portfolio personnel",
-      href: "https://salimdiallo.dev",
-      dates: "2025",
-      active: true,
-      description:
-        "Ce portfolio — vitrine software, data et IA. Next.js + Tailwind.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Magic UI"],
-      links: [
-        {
-          type: "Website",
-          href: "https://salimdiallo.dev",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
+    // {
+    //   title: "Portfolio personnel",
+    //   href: "https://salimdiallo.dev",
+    //   dates: "2025",
+    //   active: true,
+    //   description:
+    //     "Ce portfolio — vitrine software, data et IA. Next.js + Tailwind.",
+    //   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Magic UI"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://salimdiallo.dev",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "",
+    // },
   ],
 
   clubs: [
