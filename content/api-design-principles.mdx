@@ -1,33 +1,33 @@
 ---
-title: "REST API Design Principles That Stand the Test of Time"
+title: "Principes de conception d'API REST qui résistent à l'épreuve du temps"
 publishedAt: "2024-12-12"
 updatedAt: "2024-12-12"
 author: "John Doe"
-summary: "Learn how to design APIs that developers love to use and are easy to maintain."
+summary: "Apprenez à concevoir des API que les développeurs adorent utiliser et qui sont faciles à maintenir."
 image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=192&fit=crop"
 ---
 
-# REST API Design Principles That Stand the Test of Time
+# Principes de conception d'API REST qui résistent à l'épreuve du temps
 
-Great APIs feel boring in the best way: predictable, consistent, and easy to reason about. When the surface area is simple, teams ship faster and clients break less often.
+Les meilleures API sont ennuyeuses dans le bon sens du terme : prévisibles, cohérentes et faciles à comprendre. Quand la surface est simple, les équipes livrent plus vite et les clients cassent moins souvent.
 
-This is a lightweight checklist you can keep in mind while designing new endpoints or reviewing an existing API.
+Voici une liste de contrôle légère à garder en tête lors de la conception de nouveaux endpoints ou de la revue d'une API existante.
 
-## Core principles
+## Principes fondamentaux
 
-- Use clear, consistent **resource names** (think nouns).
-- Keep behavior aligned with **HTTP semantics** (read vs write).
-- Return **consistent response shapes** so clients don’t guess.
-- Prefer **sane defaults** with optional query parameters for filtering/sorting.
+- Utilisez des **noms de ressources** clairs et cohérents (pensez aux noms communs).
+- Alignez le comportement sur la **sémantique HTTP** (lecture vs écriture).
+- Renvoyez des **formats de réponse cohérents** pour éviter les devinettes côté client.
+- Privilégiez des **valeurs par défaut sensées** avec des paramètres de requête optionnels pour le filtrage/tri.
 
-## A simple checklist
+## Une liste de contrôle simple
 
-1. Pick stable resource paths (plural nouns are a common convention).
-2. Use a small set of status codes consistently.
-3. Document pagination and what “next/previous” means.
-4. Be explicit about authentication and authorization requirements.
-5. Add brief examples in docs for the “happy path” and common errors.
+1. Choisissez des chemins de ressources stables (les noms au pluriel sont une convention courante).
+2. Utilisez un petit ensemble de codes de statut de manière cohérente.
+3. Documentez la pagination et ce que signifie « suivant/précédent ».
+4. Soyez explicite sur les exigences d'authentification et d'autorisation.
+5. Ajoutez de brefs exemples dans la documentation pour le « chemin heureux » et les erreurs courantes.
 
-## Wrap-up
+## Conclusion
 
-If you optimize for consistency first, your API will be easier to document, easier to test, and easier for others to adopt.
+Si vous optimisez d'abord pour la cohérence, votre API sera plus facile à documenter, plus facile à tester et plus facile à adopter par les autres.

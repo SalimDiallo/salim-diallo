@@ -1,29 +1,29 @@
 ---
-title: "10 Next.js Performance Tips for Production Apps"
+title: "10 Conseils de Performance Next.js pour les Applications en Production"
 publishedAt: "2024-12-05"
 updatedAt: "2024-12-05"
 author: "John Doe"
-summary: "Practical optimization techniques to make your Next.js applications blazing fast in production."
+summary: "Techniques d'optimisation pratiques pour rendre vos applications Next.js ultra-rapides en production."
 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=192&fit=crop"
 ---
 
-Performance isn't optional—it's a feature. Here are battle-tested tips for optimizing Next.js apps.
+La performance n'est pas optionnelle — c'est une fonctionnalité. Voici des conseils éprouvés pour optimiser les applications Next.js.
 
-# 2. Optimize Images
+# 2. Optimiser les Images
 
-Always use `next/image`
+Utilisez toujours `next/image`
 
 ```tsx
-import Image from 'next/image';
+import Image from "next/image";
 
 export function Hero() {
   return (
     <Image
       src="/hero.jpg"
-      alt="Hero image"
+      alt="Image hero"
       width={1200}
       height={600}
-      priority // Load immediately for LCP
+      priority // Charger immédiatement pour le LCP
       placeholder="blur"
       blurDataURL="data:image/jpeg;base64,..."
     />
@@ -31,26 +31,25 @@ export function Hero() {
 }
 ```
 
+## 4. Implémenter une Mise en Cache Appropriée
 
-## 4. Implement Proper Caching
+| Stratégie          | Cas d'Usage           | TTL             |
+| ------------------ | --------------------- | --------------- |
+| `force-cache`      | Données statiques     | Indéfini        |
+| `revalidate: 3600` | Semi-statique         | 1 heure         |
+| `revalidate: 60`   | Mise à jour fréquente | 1 minute        |
+| `no-store`         | Données temps réel    | Jamais en cache |
 
-| Strategy | Use Case | TTL |
-|----------|----------|-----|
-| `force-cache` | Static data | Forever |
-| `revalidate: 3600` | Semi-static | 1 hour |
-| `revalidate: 60` | Frequently updated | 1 minute |
-| `no-store` | Real-time data | Never cache |
+## 5. Minimiser les Composants Client
 
-## 5. Minimize Client Components
+Chaque directive `'use client'` ajoute du poids à votre bundle JavaScript. Gardez les composants client petits et ciblés :
 
-Every `'use client'` directive adds to your JavaScript bundle. Keep client components small and focused:
-
-## 6. Bundle Analysis
+## 6. Analyse du Bundle
 
 ```bash title="terminal"
-# Install analyzer
+# Installer l'analyseur
 npm install @next/bundle-analyzer
 
-# Run analysis
+# Lancer l'analyse
 ANALYZE=true npm run build
 ```
