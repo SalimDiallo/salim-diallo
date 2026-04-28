@@ -38,7 +38,7 @@ export default function ClubsSection() {
       </BlurFade>
       <div className="flex flex-col gap-6">
         {DATA.clubs.map((club, index) => {
-          const linked = !!club.href && club.href !== "#";
+          const linked = !!club.href;
           return (
             <BlurFade
               key={club.name}
@@ -46,8 +46,16 @@ export default function ClubsSection() {
             >
               <ClubRow href={club.href}>
                 <div className="flex items-center gap-x-3 flex-1 min-w-0">
-                  <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-card flex-none flex items-center justify-center text-muted-foreground">
-                    <Users className="size-4" aria-hidden />
+                  <div className="size-8 md:size-10 shrink-0 rounded-full border shadow ring-2 ring-border bg-card overflow-hidden flex items-center justify-center text-muted-foreground">
+                    {club.logoUrl ? (
+                      <img
+                        src={club.logoUrl}
+                        alt={club.name}
+                        className="size-full object-cover"
+                      />
+                    ) : (
+                      <Users className="size-4" aria-hidden />
+                    )}
                   </div>
                   <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                     <div className="font-semibold leading-none flex items-center gap-2">

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import BlurFade from "@/components/magicui/blur-fade";
-import CertificationsSection from "@/components/section/certifications-section";
+import CertificationsSummary from "@/components/section/certifications-summary";
 import ClubsSection from "@/components/section/clubs-section";
 import ContactSection from "@/components/section/contact-section";
 import ExploreSection from "@/components/section/explore-section";
@@ -158,7 +158,7 @@ export default function Page() {
       </section>
       <section id="certifications">
         <BlurFade delay={BLUR_FADE_DELAY * 10.3}>
-          <CertificationsSection />
+          <CertificationsSummary />
         </BlurFade>
       </section>
       <section id="clubs">
