@@ -104,7 +104,7 @@ export const DATA = {
       location: "Rabat, Maroc",
       title: "Stage de découverte du monde professionnel",
       logoUrl: "/images/work/hcp.png",
-      // start: "Juillet 2025",
+      start: "",
       end: "Juillet 2025",
       description:
         "Stage de découverte en administration centrale : observation des missions, outils statistiques, processus de gestion des données.",
