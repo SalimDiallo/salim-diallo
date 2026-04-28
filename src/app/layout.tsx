@@ -1,6 +1,7 @@
 import IntroOverlay from "@/components/intro-overlay";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import Navbar from "@/components/navbar";
+import SiteFooter from "@/components/site-footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -100,6 +101,7 @@ export default function RootLayout({
             </div>
             <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
               {children}
+              <SiteFooter />
             </div>
             <Navbar />
           </TooltipProvider>
