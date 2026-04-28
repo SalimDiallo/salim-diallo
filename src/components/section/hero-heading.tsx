@@ -42,8 +42,8 @@ export default function HeroHeading({
           <span className="absolute inset-0 rounded-full bg-emerald-500 animate-ping opacity-60" />
           <span className="relative rounded-full bg-emerald-500 size-2" />
         </span>
-        <span>Disponible</span>
-        <span aria-hidden className="text-border">/</span>
+        {/* <span>Disponible</span> */}
+        {/* <span aria-hidden className="text-border">/</span> */}
         <span>{location}</span>
       </motion.div>
 
