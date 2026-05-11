@@ -459,7 +459,7 @@ export const DATA = {
 
   gallery: [
     // { src: "/images/gallery/1.png", alt: "Photo 1", orientation: "horizontal" as const },
-    { src: "/images/gallery/2.png", alt: "Photo 2", orientation: "vertical" as const },
+    // { src: "/images/gallery/2.png", alt: "Photo 2", orientation: "vertical" as const },
     { src: "/images/gallery/3.png", alt: "Photo 3", orientation: "horizontal" as const },
     { src: "/images/gallery/4.png", alt: "Photo 4", orientation: "vertical" as const },
     { src: "/images/gallery/5.png", alt: "Photo 5", orientation: "vertical" as const },
