@@ -19,9 +19,9 @@ export const DATA = {
   location: "Rabat, Maroc",
   locationLink: "https://www.google.com/maps/place/Rabat",
   description:
-    "Étudiant ingénieur INSEA en Data & Software Engineering. Full-stack, data, IA. Freelance & collaborations.",
+    "Ingénieur INSEA — Data, IA & Full-stack.",
   summary:
-    "Élève ingénieur à l'[INSEA](https://insea.ac.ma) (Rabat) en **Data & Software Engineering**. Mon terrain de jeu : **pipelines de données** (Python, **SQL**, **Apache Airflow**, Pandas), **modélisation** (PostgreSQL, MongoDB, Oracle) et **IA appliquée** (RAG, fine-tuning, MCP). En complément, je livre des apps full-stack (Django, Next.js, TypeScript) pour mettre la data au service du produit. [Stage au HCP](#work), [MCPC 2025](#hackathons), et plusieurs projets freelance (scraping, ETL, automatisation **N8N**, assistants IA).",
+    "Élève ingénieur [INSEA](https://insea.ac.ma) en **Data & Software Engineering**. **Pipelines** (Python, SQL, Airflow), **bases** (PostgreSQL, MongoDB) et **IA** (RAG, fine-tuning, MCP). Apps full-stack en Django/Next.js. [Stage HCP](#work), [MCPC 2025](#hackathons), freelance (ETL, N8N, assistants IA).",
   avatarUrl: "/images/avatar.jpg",
   skills: [
     // Data & IA (mis en avant)
@@ -95,7 +95,7 @@ export const DATA = {
       start: "2022",
       end: "Présent",
       description:
-        "Apps web sur mesure (gestion d'agence, e-commerce voyage). Solutions IA pour extraction et assistance aux études : scraping, nettoyage et pipelines de données.",
+        "Apps web sur mesure, solutions IA, scraping et pipelines de données.",
     },
     {
       company: "Haut Commissariat au Plan",
@@ -107,7 +107,7 @@ export const DATA = {
       start: "",
       end: "Juillet 2025",
       description:
-        "Stage de découverte en administration centrale : observation des missions, outils statistiques, processus de gestion des données.",
+        "Découverte des outils statistiques et processus de gestion des données.",
     },
     {
       company: "Faculté des Sciences et Techniques — USMBA, Fès",
@@ -119,7 +119,7 @@ export const DATA = {
       start: "Mars 2023",
       end: "Mai 2023",
       description:
-        "Stage de 3 mois : conception et développement d'une application web de gestion des matériels informatiques du département. Gestion des affectations, suivi du parc matériel, modélisation de la base de données, back-end et interfaces de saisie/consultation.",
+        "App web de gestion du parc informatique : modélisation BD, back-end et interfaces.",
     },
   ],
   education: [
@@ -156,7 +156,7 @@ export const DATA = {
       dates: "2024 - 2025",
       active: true,
       description:
-        "App web de gestion d'agence : clients, employés, projets, facturation, dashboards.",
+        "Gestion d'agence : clients, projets, facturation, dashboards.",
       technologies: ["Django", "PostgreSQL", "Tailwind CSS", "HTMX"],
       links: [],
       image: "/images/projects/louratech.png",
@@ -168,7 +168,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Site d'agence de voyage : catalogue de tours au Sénégal, réservation et paiement en ligne.",
+        "Catalogue de tours au Sénégal, réservation et paiement en ligne.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
       links: [],
       image: "/images/projects/senetour.png",
@@ -180,7 +180,7 @@ export const DATA = {
       dates: "2024 - 2025",
       active: true,
       description:
-        "LLM + RAG : flashcards et quiz adaptatifs générés depuis tes cours et PDFs. Révisions espacées.",
+        "RAG : flashcards et quiz adaptatifs depuis tes cours et PDFs.",
       technologies: ["Python", "RAG", "LangChain", "Next.js"],
       links: [],
       image: "/images/projects/revise.png",
@@ -192,7 +192,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Scraping multi-sources de données auto, nettoyage, déduplication et stockage SQL pour analyse.",
+        "Scraping multi-sources, nettoyage et stockage SQL pour analyse.",
       technologies: ["Python", "BeautifulSoup", "Playwright", "PostgreSQL"],
       links: [],
       image: "/images/projects/carforSale.png",
@@ -204,7 +204,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Workflow N8N : Gmail → extraction LLM → base Notion structurée.",
+        "N8N : Gmail → extraction LLM → Notion structuré.",
       technologies: ["N8N", "Notion API", "Gmail API", "OpenAI"],
       links: [],
       image: "/images/projects/n8n.png",
@@ -216,7 +216,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Suivi temps réel des cours crypto, alertes personnalisées, historique. Event-driven + WebSockets.",
+        "Suivi temps réel des cours crypto, alertes et historique via WebSockets.",
       technologies: ["Next.js", "TypeScript", "WebSockets", "Redis"],
       links: [],
       image: "/images/projects/CryptoApp.png",
@@ -228,7 +228,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Bot Telegram : campagnes en masse, templating, planification, reporting de livraison.",
+        "Bot Telegram : campagnes en masse, templating et reporting.",
       technologies: ["Python", "Telegram Bot API", "PostgreSQL"],
       links: [],
       image: "/images/projects/telegram.png",
@@ -240,7 +240,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "Site institutionnel multilingue pour AGUIFA : ESG framework, structuration de la finance verte et reporting climat à l'échelle africaine.",
+        "Site institutionnel multilingue : ESG, finance verte et reporting climat.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
       links: [],
       image: "/images/projects/aguifa.png",
@@ -252,7 +252,7 @@ export const DATA = {
       dates: "2024 - 2025",
       active: true,
       description:
-        "Site officiel du Forum GENI Entreprise (INSEA × INPT × ENSIAS) : événements, carrières, galerie et partenaires. Conçu et maintenu en tant que Chef de cellule Communication & IT.",
+        "Site officiel du Forum (INSEA × INPT × ENSIAS) : événements, carrières, partenaires.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
       links: [
         {
@@ -291,7 +291,7 @@ export const DATA = {
       timeframe: "2024 — Présent",
       logoUrl: "/images/club/forum.png",
       description:
-        "Pilotage de la com' digitale et de l'IT du club. Co-organisation du Forum Génie Entreprise — grand forum inter-écoles INSEA × INPT × ENSIAS.",
+        "Pilotage com' digitale et IT. Co-organisation du Forum inter-écoles INSEA × INPT × ENSIAS.",
       href: "https://forumgenientreprise.com/",
     },
     {
@@ -300,7 +300,7 @@ export const DATA = {
       timeframe: "2024 — 2025",
       logoUrl: "/images/club/edge.png",
       description:
-        "Co-organisation du Game of Code : compétition de programmation et d'IA pour fédérer les étudiants autour de l'innovation tech.",
+        "Co-organisation du Game of Code : compétition de programmation et d'IA.",
       href: "https://inseainnovationedge.com/",
     },
   ],
@@ -433,7 +433,7 @@ export const DATA = {
       dates: "Novembre 2025",
       location: "Maroc",
       description:
-        "Concours national de programmation compétitive en équipe : résolution de problèmes algo sous contrainte de temps. Stratégies de competitive programming, communication et pensée critique.",
+        "Concours national de programmation compétitive en équipe.",
       image: "",
       links: [],
     },
@@ -442,7 +442,7 @@ export const DATA = {
       dates: "Février 2026",
       location: "Rabat",
       description:
-        "Hackathon e-santé UM5 : prototypage d'une solution numérique pour un cas d'usage médical concret, du brainstorming au pitch final.",
+        "Hackathon e-santé UM5 : prototypage d'une solution médicale, du brainstorming au pitch.",
       image: "",
       links: [],
     },
@@ -451,7 +451,7 @@ export const DATA = {
       dates: "2024",
       location: "Rabat",
       description:
-        "Compétition INSEA dédiée à l'IA et au code. Participation côté organisation (Innovation Edge) et résolution de challenges algorithmiques.",
+        "Compétition INSEA IA & code : organisation (Innovation Edge) et challenges algo.",
       image: "",
       links: [],
     },
@@ -473,27 +473,27 @@ export const DATA = {
       title:
         "INSEA's 'Game of Codes' to Foster AI Innovation and Coding Excellence",
       description:
-        "Présentation de l'événement Game of Codes à l'INSEA, dédié à l'innovation IA et à l'excellence en programmation.",
+        "Game of Codes INSEA : innovation IA et excellence en programmation.",
       url: "https://youtu.be/L-F5F05l4ps?si=V-A7WEuMScbwqhcp",
     },
     {
       title: "Vidéo de présentation du projet MOO",
       description:
-        "Démo du projet de Modélisation Orientée Objet : rétro-ingénierie de Watiqa.ma.",
+        "Démo MOO : rétro-ingénierie de Watiqa.ma.",
       url: "https://youtu.be/nHS6NYS2_hk?si=J6yiVsLzBd7kl_Kl",
     },
     {
       title:
         "Analyseur de grammaires régulières — Technique de compilation",
       description:
-        "Présentation du projet d'analyseur de grammaires régulières réalisé en cours de compilation.",
+        "Projet d'analyseur de grammaires régulières (compilation).",
       url: "https://youtu.be/rKRsC-Jb8_k?si=1no4cOwx2lkdpJ2w",
     },
     {
       title:
         "Un parcours inspirant : de l'INSEA à Gitex grâce à la tech et l'automatisation",
       description:
-        "Itinéraire et leçons apprises sur la tech, l'automatisation et l'entrepreneuriat étudiant.",
+        "Tech, automatisation et entrepreneuriat étudiant.",
       url: "https://youtu.be/qNPdUfyEDdQ?si=KwvnXlzgTgm7SiFV",
     },
   ],
@@ -503,7 +503,7 @@ export const DATA = {
       slug: "analyseur-grammaires-regulieres",
       title: "Analyseur de Grammaires Régulières",
       description:
-        "Rapport du projet de technique de compilation : conception et implémentation d'un analyseur de grammaires régulières.",
+        "Rapport : conception et implémentation d'un analyseur de grammaires régulières.",
       category: "Compilation",
       file: "/docs/Compilation.pdf",
       date: "Décembre 2025",
@@ -513,7 +513,7 @@ export const DATA = {
       slug: "retro-ingenierie-watiqa",
       title: "Rétro-ingénierie de Watiqa.ma",
       description:
-        "Rapport du projet de Modélisation Orientée Objet : rétro-ingénierie du portail Watiqa.ma et conception UML.",
+        "Rapport MOO : rétro-ingénierie du portail Watiqa.ma et conception UML.",
       category: "Modélisation Orientée Objet",
       file: "/docs/ProjetMOO_final.pdf",
       date: "Décembre 2025",
