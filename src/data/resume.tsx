@@ -5,13 +5,12 @@ import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Python } from "@/components/ui/svgs/python";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import {
-  Briefcase,
-  FileText,
-  FolderGit2,
-  HomeIcon,
-  Images,
-  NotebookIcon,
-  Youtube,
+    FileText,
+    FolderGit2,
+    HomeIcon,
+    Images,
+    NotebookIcon,
+    Youtube
 } from "lucide-react";
 
 export const DATA = {
@@ -51,11 +50,11 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Accueil" },
     { href: "/projects", icon: FolderGit2, label: "Projets" },
-    { href: "/#work", icon: Briefcase, label: "Expériences" },
-    { href: "/gallery", icon: Images, label: "Galerie" },
-    { href: "/videos", icon: Youtube, label: "Vidéos" },
+    // { href: "/#work", icon: Briefcase, label: "Expériences" },
+    { href: "/certifications", icon: NotebookIcon, label: "Certications" },
     { href: "/docs", icon: FileText, label: "Documents" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/videos", icon: Youtube, label: "Vidéos" },
+    { href: "/gallery", icon: Images, label: "Galerie" },
   ],
   contact: {
     email: "sidymamadousalim@gmail.com",
