@@ -154,6 +154,49 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Data Warehouse & Analytics — Avis clients bancaires (Maroc)",
+      href: "#",
+      dates: "2025 - 2026",
+      active: true,
+      description:
+        "Pipeline complet : scraping Google Maps, orchestration Airflow, transformations DBT, stockage PostgreSQL, analyse de sentiments et extraction de topics.",
+      technologies: [
+        "Python",
+        "Apache Airflow",
+        "DBT",
+        "PostgreSQL",
+        "NLP",
+        "Web Scraping",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Backtesting trading & NLP pipeline",
+      href: "#",
+      dates: "2025 - 2026",
+      active: true,
+      description:
+        "Projet encadré : pipeline scraping → nettoyage → analyse de sentiments → entraînement de modèle pour stratégie de trading.",
+      technologies: ["Python", "NLP", "Pandas", "scikit-learn", "Backtesting"],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Chatbot RAG — Agence de voyage",
+      href: "#",
+      dates: "2025 - 2026",
+      active: true,
+      description:
+        "Chatbot intelligent basé sur RAG pour répondre aux requêtes clients (FAQ, destinations, offres) — embeddings + vector search.",
+      technologies: ["Python", "RAG", "LangChain", "Embeddings", "Vector DB"],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
       title: "LouraTech — Gestion d'agence",
       href: "https://www.louratech.org/",
       dates: "2024 - 2025",
