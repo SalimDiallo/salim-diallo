@@ -15,38 +15,33 @@ const BLUR_FADE_DELAY = 0.04;
 const tiles = [
   {
     href: "/projects",
-    label: "Projets",
+    label: "projects",
     icon: Briefcase,
-    descriptionFor: (count: number) =>
-      `${count} projets software, data et IA.`,
+    descriptionFor: (count: number) => `${count} entries`,
   },
   {
     href: "/certifications",
-    label: "Certifications",
+    label: "certifications",
     icon: Award,
-    descriptionFor: (count: number) =>
-      `${count} certifications avec aperçu document.`,
+    descriptionFor: (count: number) => `${count} entries`,
   },
   {
     href: "/gallery",
-    label: "Galerie",
+    label: "gallery",
     icon: Images,
-    descriptionFor: (count: number) =>
-      `${count} photos — événements et coulisses.`,
+    descriptionFor: (count: number) => `${count} entries`,
   },
   {
     href: "/videos",
-    label: "Vidéos",
+    label: "videos",
     icon: Youtube,
-    descriptionFor: (count: number) =>
-      `${count} vidéos YouTube — talks et démos.`,
+    descriptionFor: (count: number) => `${count} entries`,
   },
   {
     href: "/docs",
-    label: "Documents",
+    label: "docs",
     icon: FileText,
-    descriptionFor: (count: number) =>
-      `${count} rapports de projets PDF en lecture seule.`,
+    descriptionFor: (count: number) => `${count} entries`,
   },
 ] as const;
 
@@ -62,7 +57,10 @@ export default function ExploreSection() {
   return (
     <section id="explore" className="flex min-h-0 flex-col gap-y-4">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h2 className="text-xl font-bold">Explorer</h2>
+        <h2 className="text-xl font-bold flex items-center gap-2">
+          <span aria-hidden className="text-muted-foreground">●</span>
+          Explorer
+        </h2>
       </BlurFade>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {tiles.map((tile, id) => {
@@ -88,8 +86,10 @@ export default function ExploreSection() {
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="font-semibold leading-none">{tile.label}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
+                  <h3 className="font-mono font-medium leading-none">
+                    {tile.label}
+                  </h3>
+                  <p className="font-mono text-xs text-muted-foreground leading-relaxed">
                     {tile.descriptionFor(count)}
                   </p>
                 </div>

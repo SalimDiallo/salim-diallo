@@ -35,8 +35,9 @@ export default function CertificationsSummary() {
     <section id="certifications" className="flex min-h-0 flex-col gap-y-4">
       <BlurFade delay={BLUR_FADE_DELAY}>
         <h2 className="text-xl font-bold flex items-center gap-2">
+          <span aria-hidden className="text-muted-foreground">●</span>
           Certifications
-          <span className="bg-card border border-border rounded-md px-2 py-0.5 text-muted-foreground text-sm font-medium">
+          <span className="font-mono bg-card border border-border rounded-md px-2 py-0.5 text-muted-foreground text-sm">
             {total}
           </span>
         </h2>
@@ -47,18 +48,14 @@ export default function CertificationsSummary() {
         <BlurFade delay={BLUR_FADE_DELAY * 2}>
           {(() => {
             const inner = (
-              <div className="relative overflow-hidden p-4 rounded-xl border border-border bg-linear-to-br from-card via-card to-accent/30 hover:ring-2 hover:ring-muted transition-all duration-200">
-                <div
-                  aria-hidden
-                  className="absolute -top-10 -right-10 size-32 rounded-full bg-emerald-500/10 blur-2xl"
-                />
+              <div className="relative overflow-hidden p-4 rounded-xl border border-border bg-card hover:ring-1 hover:ring-border transition-all duration-200">
                 <div className="relative flex items-start gap-3">
-                  <div className="size-10 shrink-0 rounded-lg border border-border bg-card flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                  <div className="size-10 shrink-0 rounded-lg border border-border bg-background flex items-center justify-center text-foreground">
                     <Trophy className="size-5" aria-hidden />
                   </div>
                   <div className="flex-1 min-w-0 flex flex-col gap-1">
-                    <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">
-                      Mise en avant
+                    <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                      # featured
                     </div>
                     <div className="font-semibold leading-snug flex items-center gap-2">
                       {featured.name}

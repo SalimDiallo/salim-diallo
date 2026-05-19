@@ -19,28 +19,27 @@ export default function ContactSection() {
           }}
         />
       </div>
-      <div className="relative flex flex-col items-center gap-4 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Restons en contact
+      <div className="relative flex flex-col items-center gap-3 text-center">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl flex items-center gap-2">
+          <span aria-hidden className="font-mono text-muted-foreground">$</span>
+          contact
         </h2>
-        <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          Une idée de projet, une opportunité ou simplement envie d&apos;échanger ? Écrivez-moi sur{" "}
+        <p className="mx-auto max-w-lg text-sm text-muted-foreground">
           <Link
             href={DATA.contact.social.LinkedIn.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+            className="font-mono text-foreground hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
-            LinkedIn
-          </Link>{" "}
-          ou par{" "}
+            linkedin
+          </Link>
+          {" · "}
           <Link
             href={`mailto:${DATA.contact.email}`}
-            className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+            className="font-mono text-foreground hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             email
           </Link>
-          . Je réponds dès que possible.
         </p>
       </div>
     </div>

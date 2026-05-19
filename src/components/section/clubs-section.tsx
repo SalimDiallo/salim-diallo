@@ -34,7 +34,10 @@ export default function ClubsSection() {
   return (
     <section id="clubs" className="flex min-h-0 flex-col gap-y-4">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h2 className="text-xl font-bold">Vie associative</h2>
+        <h2 className="text-xl font-bold flex items-center gap-2">
+          <span aria-hidden className="text-muted-foreground">●</span>
+          Vie associative
+        </h2>
       </BlurFade>
       <div className="flex flex-col gap-6">
         {DATA.clubs.map((club, index) => {

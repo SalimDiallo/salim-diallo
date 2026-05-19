@@ -13,37 +13,15 @@ type CategoryMeta = {
   // Tailwind classes — kept literal so JIT picks them up.
   pill: string;
   iconWrap: string;
-  dot: string;
 };
 
+const PILL = "border-border bg-card hover:bg-accent/40 hover:ring-border";
+const ICON_WRAP = "border-border bg-background text-foreground";
+
 const CATEGORIES: Record<CategoryKey, CategoryMeta> = {
-  data: {
-    label: "Data & IA",
-    icon: Database,
-    pill:
-      "border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 hover:ring-emerald-500/30",
-    iconWrap:
-      "border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
-    dot: "bg-emerald-500",
-  },
-  software: {
-    label: "Software & Web",
-    icon: Code2,
-    pill:
-      "border-sky-500/30 bg-sky-500/5 hover:bg-sky-500/10 hover:ring-sky-500/30",
-    iconWrap:
-      "border-sky-500/30 bg-sky-500/10 text-sky-600 dark:text-sky-400",
-    dot: "bg-sky-500",
-  },
-  devops: {
-    label: "DevOps & Automatisation",
-    icon: Workflow,
-    pill:
-      "border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 hover:ring-amber-500/30",
-    iconWrap:
-      "border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400",
-    dot: "bg-amber-500",
-  },
+  data: { label: "data", icon: Database, pill: PILL, iconWrap: ICON_WRAP },
+  software: { label: "software", icon: Code2, pill: PILL, iconWrap: ICON_WRAP },
+  devops: { label: "devops", icon: Workflow, pill: PILL, iconWrap: ICON_WRAP },
 };
 
 const CATEGORY_ORDER: CategoryKey[] = ["data", "software", "devops"];
@@ -76,8 +54,9 @@ export default function SkillsSection() {
     <div className="flex min-h-0 flex-col gap-y-5">
       <BlurFade delay={BLUR_FADE_DELAY * 9}>
         <h2 className="text-xl font-bold flex items-center gap-2">
+          <span aria-hidden className="text-muted-foreground">●</span>
           Compétences
-          <span className="bg-card border border-border rounded-md px-2 py-0.5 text-muted-foreground text-sm font-medium">
+          <span className="font-mono bg-card border border-border rounded-md px-2 py-0.5 text-muted-foreground text-sm">
             {DATA.skills.length}
           </span>
         </h2>
@@ -102,16 +81,11 @@ export default function SkillsSection() {
                   >
                     <HeaderIcon className="size-3.5" aria-hidden />
                   </span>
-                  <span className="text-sm font-semibold">{meta.label}</span>
-                  <span
-                    className={cn(
-                      "ml-1 inline-flex h-1.5 w-1.5 rounded-full",
-                      meta.dot,
-                    )}
-                    aria-hidden
-                  />
-                  <span className="text-xs tabular-nums text-muted-foreground">
-                    {items.length}
+                  <span className="font-mono text-sm font-medium text-foreground">
+                    {meta.label}
+                  </span>
+                  <span className="font-mono text-xs tabular-nums text-muted-foreground">
+                    ({items.length})
                   </span>
                 </div>
               </BlurFade>

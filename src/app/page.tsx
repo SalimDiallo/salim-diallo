@@ -32,17 +32,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="shrink-0">
               <div className="relative group">
-                {/* Soft glow */}
-                <div
-                  aria-hidden
-                  className="absolute -inset-2 rounded-full bg-linear-to-tr from-emerald-500/20 via-foreground/10 to-transparent blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"
-                />
-                {/* Gradient ring */}
-                <div
-                  aria-hidden
-                  className="absolute -inset-1 rounded-full bg-linear-to-br from-foreground via-muted-foreground to-foreground/30 opacity-90"
-                />
-                <Avatar className="relative size-28 md:size-36 rounded-full shadow-xl ring-4 ring-background transition-transform duration-500 group-hover:scale-[1.03]">
+                <Avatar className="relative size-28 md:size-36 rounded-full ring-1 ring-border transition-transform duration-500 group-hover:scale-[1.03]">
                   <AvatarImage
                     alt={DATA.name}
                     src={DATA.avatarUrl}
@@ -68,7 +58,10 @@ export default function Page() {
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-xl font-bold">À propos</h2>
+            <h2 className="text-xl font-bold flex items-center gap-2">
+              <span aria-hidden className="text-muted-foreground">●</span>
+              À propos
+            </h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
@@ -82,7 +75,10 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Expériences professionnelles</h2>
+            <h2 className="text-xl font-bold flex items-center gap-2">
+              <span aria-hidden className="text-muted-foreground">●</span>
+              Expériences
+            </h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <WorkSection />
@@ -92,7 +88,10 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Études</h2>
+            <h2 className="text-xl font-bold flex items-center gap-2">
+              <span aria-hidden className="text-muted-foreground">●</span>
+              Études
+            </h2>
           </BlurFade>
           <div className="flex flex-col gap-8">
             {DATA.education.map((education, index) => (

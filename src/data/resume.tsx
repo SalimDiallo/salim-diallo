@@ -5,7 +5,9 @@ import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Python } from "@/components/ui/svgs/python";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import {
+  Briefcase,
   FileText,
+  FolderGit2,
   HomeIcon,
   Images,
   NotebookIcon,
@@ -48,6 +50,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Accueil" },
+    { href: "/projects", icon: FolderGit2, label: "Projets" },
+    { href: "/#work", icon: Briefcase, label: "Expériences" },
     { href: "/gallery", icon: Images, label: "Galerie" },
     { href: "/videos", icon: Youtube, label: "Vidéos" },
     { href: "/docs", icon: FileText, label: "Documents" },

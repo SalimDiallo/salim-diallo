@@ -1,5 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import CertificationCard from "@/components/section/certification-card";
+import CertificationsWall from "@/components/section/certifications-wall";
 import { DATA } from "@/data/resume";
 import { ChevronLeft } from "lucide-react";
 import type { Metadata } from "next";
@@ -23,43 +23,36 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function CertificationsPage() {
   return (
-    <section id="certifications-page" className="flex flex-col gap-8">
+    <section id="certifications-page" className="flex flex-col gap-6">
       <BlurFade delay={BLUR_FADE_DELAY}>
         <Link
           href="/"
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors border border-border rounded-lg px-2 py-1 inline-flex items-center gap-1 group w-fit"
+          className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors border border-border rounded-md px-2 py-1 inline-flex items-center gap-1 group w-fit"
           aria-label="Retour à l'accueil"
         >
           <ChevronLeft className="size-3 group-hover:-translate-x-px transition-transform" />
-          Retour à l&apos;accueil
+          cd ..
         </Link>
       </BlurFade>
 
       <BlurFade delay={BLUR_FADE_DELAY * 2}>
-        <div className="flex flex-col gap-2">
-          <h1 className="text-3xl font-semibold tracking-tight flex items-center gap-2">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight flex items-center gap-2">
+            <span aria-hidden className="text-muted-foreground">●</span>
             Certifications
-            <span className="bg-card border border-border rounded-md px-2 py-0.5 text-muted-foreground text-sm">
+            <span className="font-mono bg-card border border-border rounded-md px-2 py-0.5 text-muted-foreground text-sm">
               {DATA.certifications.length}
             </span>
           </h1>
-          <p className="text-sm text-muted-foreground max-w-prose">
-            Diplômes et certifications obtenus en data, IA et software
-            engineering. Aperçu document/image en lecture seule.
+          <p className="font-mono text-xs text-muted-foreground">
+            # mur des justificatifs — filtre, trie, clique pour zoomer.
           </p>
         </div>
       </BlurFade>
 
-      <div className="flex flex-col gap-4">
-        {DATA.certifications.map((cert, id) => (
-          <BlurFade
-            key={cert.slug}
-            delay={BLUR_FADE_DELAY * 3 + id * 0.05}
-          >
-            <CertificationCard cert={cert} />
-          </BlurFade>
-        ))}
-      </div>
+      <BlurFade delay={BLUR_FADE_DELAY * 3}>
+        <CertificationsWall certs={DATA.certifications} />
+      </BlurFade>
     </section>
   );
 }

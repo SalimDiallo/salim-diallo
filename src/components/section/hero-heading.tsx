@@ -68,15 +68,14 @@ export default function HeroHeading({
           className="relative inline-block text-foreground"
         >
           {firstName} {lastName ? lastName : ""}
-          {/* Subtle underline accent */}
-          <motion.span
-            aria-hidden
-            className="absolute left-0 right-0 -bottom-1 h-[3px] bg-foreground rounded-full origin-left"
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.6, ease: [0.65, 0, 0.35, 1], delay: 0.5 }}
-          />
         </motion.span>
+        <motion.span
+          aria-hidden
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="inline-block w-[0.55em] h-[0.95em] -mb-[0.05em] bg-foreground align-baseline animate-pulse"
+        />
         <motion.span
           aria-hidden
           initial={{ opacity: 0 }}
